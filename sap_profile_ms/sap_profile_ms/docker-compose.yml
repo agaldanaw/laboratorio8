@@ -6,6 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-        ConnectionString: server=172.18.0.2;port=3306;database=sap_profile_db;user=root;password=Camacho.123;Protocol=tcp
+        ConnectionString: server=ec2-54-237-187-136.compute-1.amazonaws.com;port=3306;database=sap_profile_db;user=root;password=Camacho.123;Protocol=tcp
     ports:
       - "8000:80"
