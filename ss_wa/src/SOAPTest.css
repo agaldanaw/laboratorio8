@@ -1,0 +1,83 @@
+.soaptest{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soaptest .content{
+    width: 600px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.soaptest .content h1{
+    font-size: 3.5em;
+    width: 80%;
+    margin-bottom: 2vh;
+}
+
+.soaptest .content h2 {
+    font-size: 2em;
+    width: 100%;
+    text-align: start;
+    margin-top: 8vh;
+    margin-bottom: 5px;
+}
+
+.soaptest .content .response_div{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 0.5vw;
+}
+
+.soaptest .content .response_div p{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.soaptest .content .submit{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.soaptest .content .submit .submit_btn{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+    margin-top: 1vh;
+    padding: 0 !important;
+    transition: ease-in-out 0.18s;
+    cursor: pointer;
+}
+
+.soaptest .content .submit  .submit_btn:hover {
+    width: 100%;
+}
+
+.soaptest .content .submit .submit_btn p {
+    font-size: 1.17rem;
+    margin: 12px 0 !important;
+}

@@ -1,0 +1,238 @@
+:root {
+    --primary: #03A9F4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid #282c34;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px #282c34 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.Login {
+    width: 100vw !important;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.error_msg {
+    width: auto !important;
+    max-width: 16em;
+    height: auto;
+    padding: 6px 12px 6px 12px;
+    background-color: #B71C1C;
+    border-radius: 5px;
+    color: white;
+    margin: 0 0 14px 0;
+    display: flex;
+    align-content: center !important;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error_msg span {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    color: white;
+    font-size: 1rem;
+    margin: 0 16px 0 8px !important;
+}
+
+.error_msg .help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px !important;
+    margin-bottom: 0 !important;
+    margin-right: 10px;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.image-upload img {
+    width: 20vh;
+    cursor: pointer;
+}
+
+.profilepic {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    margin-top: 4vh;
+    transition: all 0.18s ease-in-out;
+}
+
+.profilepic>.crop {
+    object-fit: cover;
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    display: block;
+    max-width: none !important;
+}
+
+.profilepic:hover {
+    opacity: 0.6;
+    transform: scale(1);
+}
+
+.logo_login{
+    width: 192px;
+    height: auto;
+}
+
+.title{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.text_field_container_big h6{
+    margin: 16px 0 !important;
+    font-weight: normal;
+}
+
+.text_field_container {
+    width: 18em;
+    height: auto;
+}
+
+.text_field_container_big {
+    width: 22em;
+    height: auto;
+    margin: 48px 0 !important;
+}
+
+.MuiInputBase-input{
+    color: white !important;
+    text-align: start;
+}
+
+.submit_btn_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit_btn{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+    margin-top: 5vh;
+    padding: 0 !important;
+    transition: ease-in-out 0.18s;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    width: 100%;
+}
+
+.submit_btn p{
+    font-size: 1.17rem;
+    margin: 12px 0 !important;
+}
+
+.login_link {
+    width: 100%;
+    text-align: center;
+    margin-top: 1vh;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_link {
+    margin-top: 2vh !important;
+}
+
+.login_link a {
+    transition-property: text-decoration-color;
+    transition-duration: 0.18s;
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--primary);
+}
+
+.login_link a:hover {
+    text-decoration-color: var(--primary);
+}
+
+.login_link p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    margin-right: 4px;
+}
+
+.MuiIconButton-root {
+    color: white !important ;
+}
+
+.MuiSelect-icon{
+    color: white !important;
+}
+
+.confirmRegistration {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.confirmRegistration p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.confirmRegistration .email{
+    font-size: 1.15em;
+}

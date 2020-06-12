@@ -1,0 +1,81 @@
+.Navbar{
+    width: 100%; 
+    height: auto;
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.Navbar_content{
+    width: 80%;
+    margin: 0 !important;
+    display: flex;
+    padding: 0 !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 160px;
+    height: 60px !important;
+    margin-left: 12px;
+}
+
+.navbarButtons {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    float: right;
+    color: white !important;
+}
+
+.navbar_link {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_link a {
+    transition-property: color;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: white;
+}
+
+.navbar_link a:hover {
+    color: var(--primary);
+}
+
+.Nav-icons {
+    vertical-align: middle;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.Nav-icons:hover {
+    color: var(--primary);
+}

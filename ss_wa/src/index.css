@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'ProductSans';
+  src: local('ProductSans'), url(./fonts/Product\ Sans\ Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ProductSans_bold';
+  src: local('ProductSans_bold'), url(./fonts/Product\ Sans\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ProductSans_italic';
+  src: local('ProductSans_italic'), url(./fonts/Product\ Sans\ Italic.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'ProductSans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+bold {
+  font-family: 'ProductSans_bold';
+}
+
+italic {
+  font-family: 'ProductSans_italic';
+  font-weight: lighter;
+}
