@@ -1,0 +1,55 @@
+{
+	"name": "sap_api_gateway",
+	"version": "1.0.0",
+	"description": "api gateway HangedDraw",
+	"main": "./src/index.js",
+	"scripts": {
+		"eslint": "eslint src",
+		"eslint-fix": "npm run eslint -- --fix",
+		"prepublish": "rollup -c",
+		"test": "run-s eslint",
+		"start": "run-s prepublish runServer",
+		"runServer": "node lib/index.js"
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,json,css}": [
+			"prettier --use-tabs --arrow-parens always --single-quote --write",
+			"git add"
+		]
+	},
+	"keywords": [],
+	"dependencies": {
+		"core-js": "^3.6.5",
+		"@koa/cors": "^2.2.3",
+		"apollo-server-koa": "^1.4.0",
+		"graphql": "^0.11.7",
+		"graphql-tools": "^2.24.0",
+		"graphql-type-json": "^0.1.4",
+		"koa": "^2.11.0",
+		"koa-bodyparser": "^4.3.0",
+		"koa-logger": "^3.2.1",
+		"koa-router": "^7.4.0",
+		"lodash.merge": "^4.6.2",
+		"request": "^2.88.2",
+		"request-promise-native": "^1.0.8"
+	},
+	"devDependencies": {
+		"eslint": "^4.19.1",
+		"eslint-config-cheminfo": "^1.20.1",
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-jest": "^21.7.0",
+		"eslint-plugin-no-only-tests": "^2.0.0",
+		"husky": "^0.14.3",
+		"lint-staged": "^6.0.1",
+		"npm-run-all": "^4.1.2",
+		"prettier": "1.9.2",
+		"rimraf": "^2.6.2",
+		"rollup": "^0.50.1"
+	},
+	"author": "hangeddraw",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ArqSoft-2020/sap_api_gateway/issues"
+	},
+	"homepage": "https://github.com/ArqSoft-2020/sap_api_gateway#readme"
+}

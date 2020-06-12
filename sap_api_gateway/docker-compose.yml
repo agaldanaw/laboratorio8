@@ -1,0 +1,21 @@
+version: '2.1'
+services:
+  sap_api_gateway:
+    build: .
+    environment:
+      PORT: '5000'
+      SHOW_URLS: 'true'
+      SAP_PROFILE_MS_API_HOST: 'localhost'
+      SAP_PROFILE_MS_API_PORT: '8000'
+      SAP_PROFILE_MS_API_ENTRY: 'api/User/'
+
+      SAP_AMIGOS_MS_API_HOST: 'ec2-34-197-44-29.compute-1.amazonaws.com'
+      SAP_AMIGOS_MS_API_PORT: '5000'
+      SAP_AMIGOS_MS_API_ENTRY: 'amigos'
+      
+      SAP_CANVAS_MS_API_HOST: 'ec2-54-172-166-70.compute-1.amazonaws.com'
+      SAP_CANVAS_MS_API_PORT: '3000'
+      SAP_CANVAS_MS_API_ENTRY: 'api/canvas/'
+
+    ports:
+      - '5000:5000'

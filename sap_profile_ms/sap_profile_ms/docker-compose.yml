@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  sap_profile_ms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+        ConnectionString: server=172.18.0.2;port=3306;database=sap_profile_db;user=root;password=Camacho.123;Protocol=tcp
+    ports:
+      - "8000:80"

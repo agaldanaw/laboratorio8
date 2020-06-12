@@ -1,0 +1,23 @@
+
+
+mutation{
+  NewAmistad(model:{
+    amigo1: "1",
+    amigo2: "2"}){
+  }
+}
+
+mutation{
+  DeleteAmistad(
+    Amigo1: 1,
+    Amigo2: 2){
+    response
+  }
+}
+
+query{
+  AmigosInfo(id : 23) {
+    error
+    response
+  }
+  }
