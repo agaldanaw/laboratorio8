@@ -11,7 +11,7 @@ namespace sap_profile_ms.LDAP
 {
     public class ServiceLDAP
     {
-        private static readonly string Host = "ec2-54-237-187-136.compute-1.amazonaws.com";
+        private static readonly string Host = "ec2-107-20-134-136.compute-1.amazonaws.com";
 
         private static readonly int Port = 389;
         private static readonly string dn = "cn=admin,dc=hangeddraw,dc=arqsoft,dc=unal,dc=edu,dc=co";

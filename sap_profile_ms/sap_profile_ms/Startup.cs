@@ -34,11 +34,10 @@ namespace sap_profile_ms
             services.AddControllers();
             var connectionStringContext = Configuration.GetConnectionString("Context");
 
-            var connectionString = Environment.GetEnvironmentVariable("ConnectionString");
+            var connectionString = "server=ec2-107-20-134-136.compute-1.amazonaws.com;port=3306;database=sap_profile_db;user=admin;password=root;Protocol=tcp";
 
             Console.WriteLine(connectionStringContext);
             Console.WriteLine(connectionString);
-
 
             if (String.IsNullOrEmpty(connectionString))
                 services.AddDbContextPool<Context>(
