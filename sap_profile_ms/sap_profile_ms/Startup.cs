@@ -108,7 +108,14 @@ namespace sap_profile_ms
             app.UseMvc();
 
             dbContext.Database.EnsureCreated();
-            //dbContext.Database.Migrate();
+            try
+            {
+                dbContext.Database.Migrate();
+            }
+            catch
+            {
+
+            }
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
