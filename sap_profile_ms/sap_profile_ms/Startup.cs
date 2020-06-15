@@ -34,17 +34,23 @@ namespace sap_profile_ms
             services.AddControllers();
             var connectionStringContext = Configuration.GetConnectionString("Context");
 
-            var connectionString = "server=ec2-107-20-134-136.compute-1.amazonaws.com;port=3306;database=sap_profile_db;user=admin;password=root;Protocol=tcp";
+            var connectionString = "server=ec2-107-20-134-136.compute-1.amazonaws.com/;port=3306;database=sap_profile_db;user=admin;password=root;Protocol=tcp";
 
             Console.WriteLine(connectionStringContext);
             Console.WriteLine(connectionString);
 
             if (String.IsNullOrEmpty(connectionString))
                 services.AddDbContextPool<Context>(
-               options => options.UseMySql(connectionStringContext));
+               options => options.UseMySql(connectionStringContext, 
+                mySqlOptionsAction => {
+                    mySqlOptionsAction.EnableRetryOnFailure();
+                }));
             else
                 services.AddDbContextPool<Context>(
-                    options => options.UseMySql(connectionString));
+                    options => options.UseMySql(connectionString,
+                mySqlOptionsAction => {
+                    mySqlOptionsAction.EnableRetryOnFailure();
+                }));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddRoleManager<RoleManager<IdentityRole>>()
